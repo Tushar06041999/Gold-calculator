@@ -65,3 +65,76 @@ Monthly_count=(int(Monthly_count))
 if How_much*0.05<How_much:
     print("Total Monafa :",(How_much*0.05*Monthly_count))
     print("Now Total We get",((How_much)+(How_much*0.05*Monthly_count)))
+    
+    
+# A school has following rules for grading system:
+# a. Below 25 - F
+# b. 25 to 45 - E
+# c. 45 to 50 - D
+# d. 50 to 60 - C
+# e. 60 to 80 - B
+# f. Above 80 - A
+# Ask user to enter marks and print the corresponding grade.
+
+Grading_system=input("Enter your Mark :")
+
+Grading_system=int(Grading_system)
+if Grading_system<25:
+    print("F")
+else:
+    if 25<= Grading_system <45:
+        print("E")
+    if 45 <= Grading_system <50:
+        print("D")
+    if 50 <= Grading_system<60:
+        print("C")
+    if 60 <= Grading_system<80:
+        print("B")
+    if 80<=Grading_system:
+        print("A")
+
+# Take input of age of 3 people by user and determine oldest and youngest among them.
+
+print("Age Determind :")
+User_one=input("Enter your age :")
+User_one=int(User_one)
+# User_two=input("Enter your age :")
+# user_two=int(User_two)
+# user_three=input("Enter your age :")
+# user_three=int(user_three)
+if User_one <=20:
+    print("Yougest")
+elif User_one< 50:
+    print("oldest")
+else:
+    print("Among of them")
+
+# A student will not be allowed to sit in exam if his/her attendence is less than 75%.
+# Take following input from user
+# Number of classes held
+# Number of classes attended.
+# And print
+# percentage of class attended
+# Is student is allowed to sit in exam or not.
+
+user_student=int(input("Enter your total classes :"))
+Total_class=int(input("Total class held on :"))
+Attend_class=int(input("Total attend class :"))
+print("Attend Totalpercent of class :",((Attend_class*100)/(Total_class)))
+if Total_class*0.75<=Attend_class:
+     print("You Allow to sit in the exam")
+else:
+    print("You aren't Eligible ")
+
+# Gold Calculator Update
+gold_price=int(input("Enter the gold Price :"))
+Gold_perana_price=int(gold_price/16)
+wanna_buy=(int(input("How much Wanna be buy :")))
+gold_per_roti_price=int(Gold_perana_price/6)
+per_point_price=gold_per_roti_price/10
+After_add_mozori=int((4000*wanna_buy)/16)+wanna_buy*Gold_perana_price
+print("per ana price :",Gold_perana_price)
+print("Per roti price :",gold_per_roti_price)
+print("Total per point price :",per_point_price)
+print("Total Gold Price:",wanna_buy*Gold_perana_price)
+print("After Adding mozori :",After_add_mozori)
